@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High Stage Festival - High BPM</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="noise-overlay"></div>
+
+    <header>
+      <div class="logo-container">
+        <h1>HIGH STAGE</h1>
+        <div class="logo-subtitle">FESTIVAL</div>
+      </div>
+      <div class="header-right">
+        <div class="current-time" id="current-time">00:00:00</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="pulse-container">
+          <div class="pulse"></div>
+        </div>
+        <div class="hero-content">
+          <h2>AGORA TOCANDO</h2>
+          <div class="now-playing" id="now-playing">
+            <div class="artist-name">Carregando...</div>
+            <div class="set-time">00:00 - 00:00</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lineup">
+        <h2>LINE-UP COMPLETO</h2>
+        <div class="filters-container">
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-artist"
+              placeholder="Buscar artista ou gênero..."
+            />
+            <button class="search-button"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="genre-filter-container">
+            <select id="genre-filter" class="genre-filter">
+              <option value="">Todos os gêneros</option>
+              <!-- Opções serão preenchidas via JavaScript -->
+            </select>
+          </div>
+        </div>
+        <div class="lineup-container" id="lineup-container">
+          <!-- Lineup será preenchido via JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 High Stage Festival. Todos os direitos reservados.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
